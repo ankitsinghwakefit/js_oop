@@ -135,25 +135,25 @@ obj.getThis3 = obj.getThis.bind(obj);
 obj.getThis4 = obj.getThis2.bind(obj);
 
 // Output
-obj.getThis();
+obj.getThis();  // window -------   but it must be obj...ask?
 
 // Output
-obj.getThis.call(a);
+obj.getThis.call(a); // window -------   but it must be a ...ask?
 
 // Output
-obj.getThis2();
+obj.getThis2(); // obj
 
 // Output
-obj.getThis2.call(a);
+obj.getThis2.call(a);// a
 
 // Output
-obj.getThis3();
+obj.getThis3();//  window
 
 // Output
-obj.getThis3.call(a);
+obj.getThis3.call(a);// window
 
 // Output
-obj.getThis4();
+obj.getThis4();// obj
 
 // Output
-obj.getThis4.call(a);
+obj.getThis4.call(a);// obj
